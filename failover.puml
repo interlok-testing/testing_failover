@@ -1,0 +1,21 @@
+```plantuml
+@startuml
+storage localhost {
+usecase instance1 [
+instance1
+]
+usecase instance2 [
+instance2
+]
+usecase instance3 [
+instance3
+]
+}
+instance1 -> instance2
+instance1 -> instance3
+instance2 -> instance1
+instance2 -> instance3
+instance3 -> instance1
+instance3 -> instance2
+@enduml
+```
