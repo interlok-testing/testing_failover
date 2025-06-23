@@ -1,5 +1,5 @@
 <adapter>
-  <unique-id>failover-testing</unique-id>
+  <unique-id>failover-testing-${testing.adapterPosition}</unique-id>
   <start-up-event-imp>com.adaptris.core.event.StandardAdapterStartUpEvent</start-up-event-imp>
   <heartbeat-event-imp>com.adaptris.core.HeartbeatEvent</heartbeat-event-imp>
   <shared-components>
