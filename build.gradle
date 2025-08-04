@@ -6,7 +6,6 @@ plugins {
 ext {
   testingCommonGradle = "https://raw.githubusercontent.com/interlok-testing/testing_common/refs/heads/master/common.gradle?timestamp=${new Date().getTime()}"
 //  testingCommonGradle = "../testing_common/common.gradle"
-  interlokTestingVersion = "0.1"
 }
 
 allprojects {
@@ -18,5 +17,4 @@ dependencies {
   interlokRuntime ("com.adaptris:interlok-failover:$interlokVersion") { changing=true }
 
   interlokJavadocs group: "com.adaptris", name: "interlok-failover", version: "$interlokVersion", classifier: "javadoc", changing: true, transitive: false
-  testImplementation group: "com.adaptris", name: "interlok-testing-common", version: "$interlokTestingVersion"
 }
